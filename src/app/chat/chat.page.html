@@ -44,20 +44,8 @@
                 'name-row-left': !conv.sender
               }"
             >
-              {{ conv.sender ? 'Martha' : 'Shawn' }}
-              <div
-                [ngClass]="{
-                  'timer-right': conv.sender,
-                  'timer-left': !conv.sender
-                }"
-              >
-                {{ i + 5 }} mins ago
-                <ion-icon
-                  *ngIf="conv.sender && conv.sent"
-                  name="checkmark"
-                  [color]="conv.read ? 'd3green' : 'light'"
-                  class="first-tick"
-                ></ion-icon>
+              {{ conv.sender ? 'Aluno' : 'ChatBot' }}
+              <div>
               </div>
               <div
                 [ngClass]="{
@@ -77,7 +65,7 @@
               class="no-padding"
               [ngClass]="{
                 'message-row-right': conv.sender,
-                'message-row-left': !conv.sender
+                'message- row-left': !conv.sender
               }"
             >
               <ion-text no-margin class="text">{{ conv.text }}</ion-text>
